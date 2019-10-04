@@ -1,0 +1,3 @@
+/home/zygalo/C++/Coursera_git/Matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C++/Coursera_git/Matrix/cmake-build-debug/CMakeFiles/Matrix.dir
+/home/zygalo/C++/Coursera_git/Matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
