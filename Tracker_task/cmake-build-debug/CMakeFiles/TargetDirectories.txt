@@ -1,0 +1,3 @@
+/home/zygalo/C++/Coursera/tracker_task/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C++/Coursera/tracker_task/cmake-build-debug/CMakeFiles/tracker_task.dir
+/home/zygalo/C++/Coursera/tracker_task/cmake-build-debug/CMakeFiles/edit_cache.dir
