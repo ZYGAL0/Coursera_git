@@ -68,8 +68,8 @@ Date ParseDate(const string& date) {
 }
 
 bool operator<(const Date& lhs, const Date& rhs) {
-    return vector<int> {lhs.GetYear(), lhs.GetMonth(), lhs.GetDay()}
-        < vector<int> {rhs.GetYear(), rhs.GetMonth(), rhs.GetDay()};
+    return vector<int>{lhs.GetYear(), lhs.GetMonth(), lhs.GetDay()}
+            < vector<int>{rhs.GetYear(), rhs.GetMonth(), rhs.GetDay()};
 }
 
 ostream& operator << (ostream& stream, const Date& date) {

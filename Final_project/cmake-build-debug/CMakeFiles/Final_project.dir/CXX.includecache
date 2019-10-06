@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zygalo/C++/Important/Final_project/main.cpp
+/home/zygalo/C++/Coursera_git/Final_project/main.cpp
 iostream
 -
 string
@@ -18,5 +18,7 @@ map
 iomanip
 -
 vector
+-
+tuple
 -
 
