@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zygalo/C++/Coursera/framework/test_palindrome.cpp
+iostream
+-
+map
+-
+set
+-
+sstream
+-
+stdexcept
+-
+string
+-
+vector
+-
+
