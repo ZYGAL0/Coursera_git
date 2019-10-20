@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/set_of_figures.dir/set_of_figures.cpp.o  -o set_of_figures 
