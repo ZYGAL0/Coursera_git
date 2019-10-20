@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/zygalo/C++/Coursera/framework/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/zygalo/C++/Coursera/framework/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="framework">
-				<Option output="/home/zygalo/C++/Coursera/framework/cmake-build-debug/framework" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zygalo/C++/Coursera/framework/cmake-build-debug"/>
+				<Option output="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/framework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 framework"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 framework"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="framework/fast">
-				<Option output="/home/zygalo/C++/Coursera/framework/cmake-build-debug/framework" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/zygalo/C++/Coursera/framework/cmake-build-debug"/>
+				<Option output="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/framework" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,27 +67,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 framework/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 framework/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/zygalo/C++/Coursera/framework/cmake-build-debug"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera/framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/zygalo/C++/Coursera/framework/test_palindrome.cpp">
+		<Unit filename="/home/zygalo/C++/Coursera_git/Framework/Rational.h">
 			<Option target="framework"/>
 		</Unit>
-		<Unit filename="/home/zygalo/C++/Coursera/framework/CMakeLists.txt">
+		<Unit filename="/home/zygalo/C++/Coursera_git/Framework/Test_runner.h">
+			<Option target="framework"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/Framework/Tests.h">
+			<Option target="framework"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/Framework/test_rational.cpp">
+			<Option target="framework"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/Framework/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

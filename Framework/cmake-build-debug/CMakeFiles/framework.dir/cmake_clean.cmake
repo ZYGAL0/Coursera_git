@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/framework.dir/test_palindrome.cpp.o"
+  "CMakeFiles/framework.dir/test_rational.cpp.o"
   "framework"
   "framework.pdb"
 )

@@ -1,4 +1,4 @@
-# Install script for directory: /home/zygalo/C++/Coursera/framework
+# Install script for directory: /home/zygalo/C++/Coursera_git/Framework
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zygalo/C++/Coursera/framework/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

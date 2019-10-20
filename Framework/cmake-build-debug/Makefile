@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/85/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/88/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/85/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/88/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zygalo/C++/Coursera/framework
+CMAKE_SOURCE_DIR = /home/zygalo/C++/Coursera_git/Framework
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zygalo/C++/Coursera/framework/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zygalo/C++/Coursera_git/Framework/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/zygalo/C++/Coursera/framework/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/85/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/85/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/88/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera/framework/cmake-build-debug/CMakeFiles /home/zygalo/C++/Coursera/framework/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/CMakeFiles /home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera/framework/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ framework/fast:
 	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/build
 .PHONY : framework/fast
 
-test_palindrome.o: test_palindrome.cpp.o
+test_rational.o: test_rational.cpp.o
 
-.PHONY : test_palindrome.o
+.PHONY : test_rational.o
 
 # target to build an object file
-test_palindrome.cpp.o:
-	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_palindrome.cpp.o
-.PHONY : test_palindrome.cpp.o
+test_rational.cpp.o:
+	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_rational.cpp.o
+.PHONY : test_rational.cpp.o
 
-test_palindrome.i: test_palindrome.cpp.i
+test_rational.i: test_rational.cpp.i
 
-.PHONY : test_palindrome.i
+.PHONY : test_rational.i
 
 # target to preprocess a source file
-test_palindrome.cpp.i:
-	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_palindrome.cpp.i
-.PHONY : test_palindrome.cpp.i
+test_rational.cpp.i:
+	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_rational.cpp.i
+.PHONY : test_rational.cpp.i
 
-test_palindrome.s: test_palindrome.cpp.s
+test_rational.s: test_rational.cpp.s
 
-.PHONY : test_palindrome.s
+.PHONY : test_rational.s
 
 # target to generate assembly for a file
-test_palindrome.cpp.s:
-	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_palindrome.cpp.s
-.PHONY : test_palindrome.cpp.s
+test_rational.cpp.s:
+	$(MAKE) -f CMakeFiles/framework.dir/build.make CMakeFiles/framework.dir/test_rational.cpp.s
+.PHONY : test_rational.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... framework"
 	@echo "... edit_cache"
-	@echo "... test_palindrome.o"
-	@echo "... test_palindrome.i"
-	@echo "... test_palindrome.s"
+	@echo "... test_rational.o"
+	@echo "... test_rational.i"
+	@echo "... test_rational.s"
 .PHONY : help
 
 

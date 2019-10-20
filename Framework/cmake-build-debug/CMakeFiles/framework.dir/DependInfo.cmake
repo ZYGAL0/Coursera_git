@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zygalo/C++/Coursera/framework/test_palindrome.cpp" "/home/zygalo/C++/Coursera/framework/cmake-build-debug/CMakeFiles/framework.dir/test_palindrome.cpp.o"
+  "/home/zygalo/C++/Coursera_git/Framework/test_rational.cpp" "/home/zygalo/C++/Coursera_git/Framework/cmake-build-debug/CMakeFiles/framework.dir/test_rational.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

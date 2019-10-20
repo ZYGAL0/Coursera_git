@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/zygalo/C++/Coursera/framework/test_palindrome.cpp
-iostream
+/home/zygalo/C++/Coursera_git/Framework/Rational.h
+stdexcept
+-
+
+/home/zygalo/C++/Coursera_git/Framework/Test_runner.h
+vector
 -
 map
 -
 set
 -
-sstream
--
-stdexcept
--
+
+/home/zygalo/C++/Coursera_git/Framework/Tests.h
 string
 -
-vector
+
+/home/zygalo/C++/Coursera_git/Framework/test_rational.cpp
+iostream
 -
+sstream
+-
+Test_runner.h
+/home/zygalo/C++/Coursera_git/Framework/Test_runner.h
+Rational.h
+/home/zygalo/C++/Coursera_git/Framework/Rational.h
+Tests.h
+/home/zygalo/C++/Coursera_git/Framework/Tests.h
 
