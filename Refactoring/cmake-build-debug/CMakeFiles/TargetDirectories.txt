@@ -1,0 +1,3 @@
+/home/zygalo/C++/Coursera/refactoring/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/zygalo/C++/Coursera/refactoring/cmake-build-debug/CMakeFiles/refactoring.dir
+/home/zygalo/C++/Coursera/refactoring/cmake-build-debug/CMakeFiles/edit_cache.dir
