@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zygalo/C++/Coursera/refactoring/main.cpp
+/home/zygalo/C++/Coursera_git/Refactoring/main.cpp
 iostream
 -
 string

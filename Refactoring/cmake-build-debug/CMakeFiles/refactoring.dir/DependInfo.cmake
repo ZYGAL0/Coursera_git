@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zygalo/C++/Coursera/refactoring/main.cpp" "/home/zygalo/C++/Coursera/refactoring/cmake-build-debug/CMakeFiles/refactoring.dir/main.cpp.o"
+  "/home/zygalo/C++/Coursera_git/Refactoring/main.cpp" "/home/zygalo/C++/Coursera_git/Refactoring/cmake-build-debug/CMakeFiles/refactoring.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

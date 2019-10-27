@@ -43,7 +43,7 @@ public:
     }
 
 private:
-    string FavouriteSong;
+    const string FavouriteSong;
 };
 
 
@@ -59,7 +59,7 @@ public:
     }
 
 private:
-    string Subject;
+    const string Subject;
 };
 
 
