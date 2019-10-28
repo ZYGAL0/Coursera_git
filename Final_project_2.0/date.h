@@ -2,8 +2,6 @@
 
 #include <sstream>
 
-using namespace std;
-
 class Date {
 public:
 
@@ -22,9 +20,9 @@ private:
     int day;
 };
 
-Date ParseDate(istringstream &stream);
+Date ParseDate(std::istream &stream);
 
-ostream &operator<<(ostream &stream, const Date &date);
+std::ostream &operator<<(std::ostream &stream, const Date &date);
 
 bool operator<(const Date &lhs, const Date &rhs);
 

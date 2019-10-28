@@ -1,17 +1,12 @@
 #include "token.h"
 
-#include <stdexcept>
-#include <iostream>
+std::vector<Token> Tokenize(std::istream &cl) {
+    std::vector<Token> tokens;
 
-using namespace std;
-
-vector<Token> Tokenize(istream &cl) {
-    vector<Token> tokens;
-
-    char c;
+    char c = 0;
     while (cl >> c) {
         if (isdigit(c)) {
-            string date(1, c);
+            std::string date(1, c);
             for (int i = 0; i < 3; ++i) {
                 while (isdigit(cl.peek())) {
                     date += static_cast<char>(cl.get());
@@ -22,33 +17,33 @@ vector<Token> Tokenize(istream &cl) {
             }
             tokens.push_back({date, TokenType::DATE});
         } else if (c == '"') {
-            string event;
+            std::string event;
             getline(cl, event, '"');
             tokens.push_back({event, TokenType::EVENT});
         } else if (c == 'd') {
             if (cl.get() == 'a' && cl.get() == 't' && cl.get() == 'e') {
                 tokens.push_back({"date", TokenType::COLUMN});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         } else if (c == 'e') {
             if (cl.get() == 'v' && cl.get() == 'e' && cl.get() == 'n' &&
                 cl.get() == 't') {
                 tokens.push_back({"event", TokenType::COLUMN});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         } else if (c == 'A') {
             if (cl.get() == 'N' && cl.get() == 'D') {
                 tokens.push_back({"AND", TokenType::LOGICAL_OP});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         } else if (c == 'O') {
             if (cl.get() == 'R') {
                 tokens.push_back({"OR", TokenType::LOGICAL_OP});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         } else if (c == '(') {
             tokens.push_back({"(", TokenType::PAREN_LEFT});
@@ -72,13 +67,13 @@ vector<Token> Tokenize(istream &cl) {
             if (cl.get() == '=') {
                 tokens.push_back({"==", TokenType::COMPARE_OP});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         } else if (c == '!') {
             if (cl.get() == '=') {
                 tokens.push_back({"!=", TokenType::COMPARE_OP});
             } else {
-                throw logic_error("Unknown token");
+                throw std::logic_error("Unknown token");
             }
         }
     }

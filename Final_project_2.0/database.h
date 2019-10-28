@@ -1,33 +1,38 @@
 #pragma once
 
 #include "date.h"
-#include <string>
+
+#include <algorithm>
 #include <map>
 #include <vector>
-#include <iostream>
 
-using namespace std;
 
 class Database {
 public:
-    void Add(const Date &date, const string &event);
+    void Add(const Date &date, const std::string &event);
 
-    [[nodiscard]] pair<Date, string> Last(const Date &date) const;
+    [[nodiscard]] std::pair<Date, std::string> Last(const Date &date) const;
 
-    void Print(ostream &stream) const;
+    void Print(std::ostream &stream) const;
 
     template<class Func>
     int RemoveIf(Func func) {
         int del = 0;
-        for (const auto &x : db) {
-            for (auto it = x.second.begin(); it < x.second.end();) {
-                if (func(x.first, *it)) {
-                    del++;
-                    db[x.first].erase(it);
-                } else {
-                    it++;
-                }
-            }
+        for (auto &x : db) {
+            auto it = stable_partition(x.second.begin(), x.second.end(), [func, &x](const std::string& ev){
+                return !func(x.first, ev);
+            });
+            del += distance(it, x.second.end());
+            db[x.first].erase(it, x.second.end());
+
+//            for (auto it = x.second.begin(); it != x.second.end();) {
+//                if (func(x.first, *it)) {
+//                    del++;
+//                    db[x.first].erase(it);
+//                } else {
+//                    it++;
+//                }
+//            }
             if (db[x.first].empty()) {
                 db.erase(x.first);
             }
@@ -36,8 +41,8 @@ public:
     }
 
     template<class Func>
-    vector<pair<Date, string>> FindIf(Func func) {
-        vector<pair<Date, string>> res;
+    std::vector<std::pair<Date, std::string>> FindIf(Func func) const {
+        std::vector<std::pair<Date, std::string>> res;
         for (const auto &x : db) {
             for (const auto &e : x.second) {
                 if (func(x.first, e)) {
@@ -49,5 +54,5 @@ public:
     }
 
 private:
-    map<Date, vector<string>> db;
+    std::map<Date, std::vector<std::string>> db;
 };
