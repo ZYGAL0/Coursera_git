@@ -1,3 +1,0 @@
-/home/zygalo/C++/Coursera_git/Final_project_2.0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/zygalo/C++/Coursera_git/Final_project_2.0/cmake-build-debug/CMakeFiles/Final_project_2_0.dir
-/home/zygalo/C++/Coursera_git/Final_project_2.0/cmake-build-debug/CMakeFiles/edit_cache.dir
