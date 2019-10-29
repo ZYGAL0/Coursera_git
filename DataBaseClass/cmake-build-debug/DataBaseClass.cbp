@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DataBaseClass"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DataBaseClass">
+				<Option output="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/DataBaseClass" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataBaseClass"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DataBaseClass/fast">
+				<Option output="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/DataBaseClass" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 DataBaseClass/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/zygalo/C++/Coursera_git/DataBaseClass/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/condition_parser.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/condition_parser.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/database.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/database.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/date.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/date.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/main.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/node.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/node.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/test_runner.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/test_runner.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/token.cpp">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/token.h">
+			<Option target="DataBaseClass"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseClass/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
