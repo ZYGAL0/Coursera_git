@@ -1,3 +1,4 @@
+#include <cstring>
 #include "database.h"
 #include "date.h"
 #include "condition_parser.h"
@@ -10,13 +11,30 @@ int main() {
 
     Database EventBase;
 
-    std::ifstream input("DataBase");
+    std::cout << "Database is activated" << std::endl
+              << "Enter name of your database : ";
 
-    if (input.is_open()) {
-        GetFromFile(input, EventBase);
+    std::string PathName = "DataBase";
+    std::cin >> PathName;
+    PathName += ".txt";
+
+    std::cout << "Wait a minute for loading old events..." << std::endl;
+
+    std::ifstream input;
+    input.open(PathName, std::ios::in);
+
+    if (!input) {
+        std::ofstream creation(PathName);
+        creation.close();
     } else {
-        std::cout << "ERROR with open saved base!" << std::endl;
+        if (input.is_open()) {
+            EventBase.GetFromFile(input);
+        } else {
+            std::cerr << "ERROR: saved base was not opened" << std::endl;
+        }
     }
+
+    std::cout << "Loading is complete" << std::endl;
 
     for (std::string line; getline(std::cin, line);) {
         try {
@@ -66,14 +84,18 @@ int main() {
         }
     }
 
-    std::ofstream output("DataBase");
+
+    std::ofstream output;
+    output.open(PathName, std::ios::out);
 
     if (output.is_open()) {
-        EventBase.Print(output);
+        EventBase.PutIntoFile(output);
     } else {
-        std::cout << "ERROR with open file!" << std::endl;
+        std::cerr << "ERROR: database was not saved" << std::endl;
     }
     output.close();
+
+    std::cout << "Seance is over" << std::endl;
 
     return 0;
 }

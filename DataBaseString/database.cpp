@@ -27,9 +27,11 @@ void Database::Add(const std::string &date, const std::string &event) {
 
 void Database::Print(std::ostream &stream) const {
     for (const auto &i : EventBase) {
+        stream << "Date is " << i.first << std::endl;
         for (const auto &j : i.second) {
-            stream << i.first << ' ' << j << std::endl;
+            stream << '-' << j << std::endl;
         }
+        stream << std::endl;
     }
 }
 
@@ -44,17 +46,25 @@ std::string Database::Last(const std::string &date) const {
     return prev(res)->first + ' ' + prev(res)->second.back();
 }
 
-void GetFromFile(std::ifstream &input, Database &db) {
+void Database::GetFromFile(std::ifstream &input) {
     for (std::string OldEvent; getline(input, OldEvent);) {
         if (OldEvent.empty()) {
-            std::cout << "No events." << std::endl;
+            std::cout << "No events now" << std::endl;
             break;
         } else {
             std::istringstream old(OldEvent);
             const auto date = ParseDate(old);
             const auto event = ParseEvent(old);
-            db.Add(date, event);
+            Add(date, event);
         }
     }
     input.close();
+}
+
+void Database::PutIntoFile(std::ofstream &output) {
+    for (const auto &i : EventBase) {
+        for (const auto &j : i.second) {
+            output << i.first << ' ' << j << std::endl;
+        }
+    }
 }

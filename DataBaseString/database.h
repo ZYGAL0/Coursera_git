@@ -16,6 +16,10 @@ public:
 
     void Print(std::ostream &stream) const;
 
+    void GetFromFile(std::ifstream &input);
+
+    void PutIntoFile(std::ofstream &output);
+
     template<class Func>
     int RemoveIf(Func func) {
         int counter = 0;
@@ -58,5 +62,3 @@ private:
 };
 
 std::string ParseEvent(std::istream &is);
-
-void GetFromFile(std::ifstream &input, Database &db);
