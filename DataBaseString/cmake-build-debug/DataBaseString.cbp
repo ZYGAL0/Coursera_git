@@ -117,6 +117,12 @@
 		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h">
 			<Option target="Final_project_2_0"/>
 		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseString/tests.cpp">
+			<Option target="Final_project_2_0"/>
+		</Unit>
+		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseString/tests.h">
+			<Option target="Final_project_2_0"/>
+		</Unit>
 		<Unit filename="/home/zygalo/C++/Coursera_git/DataBaseString/token.cpp">
 			<Option target="Final_project_2_0"/>
 		</Unit>

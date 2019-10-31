@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/Final_project_2_0.dir/all:
 	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/depend
 	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Final_project_2_0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Final_project_2_0"
 .PHONY : CMakeFiles/Final_project_2_0.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Final_project_2_0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Final_project_2_0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Final_project_2_0.dir/rule

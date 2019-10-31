@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zygalo/C++/Coursera_git/DataBaseString/main.cpp" "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles/Final_project_2_0.dir/main.cpp.o"
   "/home/zygalo/C++/Coursera_git/DataBaseString/node.cpp" "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles/Final_project_2_0.dir/node.cpp.o"
   "/home/zygalo/C++/Coursera_git/DataBaseString/test_runner.cpp" "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles/Final_project_2_0.dir/test_runner.cpp.o"
+  "/home/zygalo/C++/Coursera_git/DataBaseString/tests.cpp" "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles/Final_project_2_0.dir/tests.cpp.o"
   "/home/zygalo/C++/Coursera_git/DataBaseString/token.cpp" "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/CMakeFiles/Final_project_2_0.dir/token.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

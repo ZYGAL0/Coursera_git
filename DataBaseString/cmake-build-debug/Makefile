@@ -285,6 +285,33 @@ test_runner.cpp.s:
 	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/test_runner.cpp.s
 .PHONY : test_runner.cpp.s
 
+tests.o: tests.cpp.o
+
+.PHONY : tests.o
+
+# target to build an object file
+tests.cpp.o:
+	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/tests.cpp.o
+.PHONY : tests.cpp.o
+
+tests.i: tests.cpp.i
+
+.PHONY : tests.i
+
+# target to preprocess a source file
+tests.cpp.i:
+	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/tests.cpp.i
+.PHONY : tests.cpp.i
+
+tests.s: tests.cpp.s
+
+.PHONY : tests.s
+
+# target to generate assembly for a file
+tests.cpp.s:
+	$(MAKE) -f CMakeFiles/Final_project_2_0.dir/build.make CMakeFiles/Final_project_2_0.dir/tests.cpp.s
+.PHONY : tests.cpp.s
+
 token.o: token.cpp.o
 
 .PHONY : token.o
@@ -339,6 +366,9 @@ help:
 	@echo "... test_runner.o"
 	@echo "... test_runner.i"
 	@echo "... test_runner.s"
+	@echo "... tests.o"
+	@echo "... tests.i"
+	@echo "... tests.s"
 	@echo "... token.o"
 	@echo "... token.i"
 	@echo "... token.s"

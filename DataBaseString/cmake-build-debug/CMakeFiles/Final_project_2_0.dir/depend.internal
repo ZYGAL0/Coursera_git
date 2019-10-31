@@ -21,6 +21,7 @@ CMakeFiles/Final_project_2_0.dir/main.cpp.o
  /home/zygalo/C++/Coursera_git/DataBaseString/main.cpp
  /home/zygalo/C++/Coursera_git/DataBaseString/node.h
  /home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h
+ /home/zygalo/C++/Coursera_git/DataBaseString/tests.h
 CMakeFiles/Final_project_2_0.dir/node.cpp.o
  /home/zygalo/C++/Coursera_git/DataBaseString/date.h
  /home/zygalo/C++/Coursera_git/DataBaseString/node.cpp
@@ -28,6 +29,12 @@ CMakeFiles/Final_project_2_0.dir/node.cpp.o
 CMakeFiles/Final_project_2_0.dir/test_runner.cpp.o
  /home/zygalo/C++/Coursera_git/DataBaseString/test_runner.cpp
  /home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o
+ /home/zygalo/C++/Coursera_git/DataBaseString/database.h
+ /home/zygalo/C++/Coursera_git/DataBaseString/date.h
+ /home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h
+ /home/zygalo/C++/Coursera_git/DataBaseString/tests.cpp
+ /home/zygalo/C++/Coursera_git/DataBaseString/tests.h
 CMakeFiles/Final_project_2_0.dir/token.cpp.o
  /home/zygalo/C++/Coursera_git/DataBaseString/token.cpp
  /home/zygalo/C++/Coursera_git/DataBaseString/token.h

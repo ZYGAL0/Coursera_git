@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Final_project_2_0.dir/main.cpp.o"
   "CMakeFiles/Final_project_2_0.dir/node.cpp.o"
   "CMakeFiles/Final_project_2_0.dir/test_runner.cpp.o"
+  "CMakeFiles/Final_project_2_0.dir/tests.cpp.o"
   "CMakeFiles/Final_project_2_0.dir/token.cpp.o"
   "Final_project_2_0"
   "Final_project_2_0.pdb"

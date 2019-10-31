@@ -17,4 +17,4 @@ add_executable(Final_project_2_0
         date.cpp
         node.cpp
         test_runner.cpp
-        )
+        tests.h tests.cpp)

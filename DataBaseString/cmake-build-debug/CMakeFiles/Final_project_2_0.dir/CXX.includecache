@@ -25,6 +25,8 @@ vector
 -
 set
 -
+fstream
+-
 
 /home/zygalo/C++/Coursera_git/DataBaseString/date.h
 sstream
@@ -39,8 +41,8 @@ condition_parser.h
 /home/zygalo/C++/Coursera_git/DataBaseString/condition_parser.h
 test_runner.h
 /home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h
-fstream
--
+tests.h
+/home/zygalo/C++/Coursera_git/DataBaseString/tests.h
 
 /home/zygalo/C++/Coursera_git/DataBaseString/node.h
 date.h
@@ -59,4 +61,8 @@ sstream
 -
 iostream
 -
+
+/home/zygalo/C++/Coursera_git/DataBaseString/tests.h
+test_runner.h
+/home/zygalo/C++/Coursera_git/DataBaseString/test_runner.h
 

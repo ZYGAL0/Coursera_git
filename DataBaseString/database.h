@@ -6,6 +6,7 @@
 #include <map>
 #include <vector>
 #include <set>
+#include <fstream>
 
 class Database {
 public:
@@ -55,3 +56,7 @@ private:
     std::map<std::string, std::vector<std::string>> EventBase;
     std::map<std::string, std::set<std::string>> EventBaseSet;
 };
+
+std::string ParseEvent(std::istream &is);
+
+void GetFromFile(std::ifstream &input, Database &db);

@@ -20,6 +20,7 @@ CMakeFiles/Final_project_2_0.dir/main.cpp.o: ../date.h
 CMakeFiles/Final_project_2_0.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Final_project_2_0.dir/main.cpp.o: ../node.h
 CMakeFiles/Final_project_2_0.dir/main.cpp.o: ../test_runner.h
+CMakeFiles/Final_project_2_0.dir/main.cpp.o: ../tests.h
 
 CMakeFiles/Final_project_2_0.dir/node.cpp.o: ../date.h
 CMakeFiles/Final_project_2_0.dir/node.cpp.o: ../node.cpp
@@ -27,6 +28,12 @@ CMakeFiles/Final_project_2_0.dir/node.cpp.o: ../node.h
 
 CMakeFiles/Final_project_2_0.dir/test_runner.cpp.o: ../test_runner.cpp
 CMakeFiles/Final_project_2_0.dir/test_runner.cpp.o: ../test_runner.h
+
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o: ../database.h
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o: ../date.h
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o: ../test_runner.h
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o: ../tests.cpp
+CMakeFiles/Final_project_2_0.dir/tests.cpp.o: ../tests.h
 
 CMakeFiles/Final_project_2_0.dir/token.cpp.o: ../token.cpp
 CMakeFiles/Final_project_2_0.dir/token.cpp.o: ../token.h

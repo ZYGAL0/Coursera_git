@@ -2,23 +2,7 @@
 #include "date.h"
 #include "condition_parser.h"
 #include "test_runner.h"
-
-#include <fstream>
-
-std::string ParseEvent(std::istream &is) {
-    while (is.peek() == ' ') {
-        is.get();
-    }
-    std::string event;
-    getline(is, event);
-    return event;
-}
-
-void TestParseEvent();
-
-void GetFromFile(std::ifstream &input, Database &db);
-
-void TestAll();
+#include "tests.h"
 
 int main() {
 
@@ -72,7 +56,7 @@ int main() {
                 }
             } else if (command.empty()) {
                 continue;
-            } else if (command == "EXIT") {
+            } else if (command == "Exit") {
                 break;
             } else {
                 throw std::logic_error("Unknown command: " + command);
@@ -92,45 +76,4 @@ int main() {
     output.close();
 
     return 0;
-}
-
-void GetFromFile(std::ifstream &input, Database &db) {
-    for (std::string OldEvent; getline(input, OldEvent);) {
-        if (OldEvent.empty()) {
-            std::cout << "No events." << std::endl;
-            break;
-        } else {
-            std::istringstream old(OldEvent);
-            const auto date = ParseDate(old);
-            const auto event = ParseEvent(old);
-            db.Add(date, event);
-        }
-    }
-    input.close();
-}
-
-void TestParseEvent() {
-    {
-        std::istringstream is("event");
-        AssertEqual(ParseEvent(is), "event", "Parse event without leading spaces");
-    }
-
-    {
-        std::istringstream is("   sport event ");
-        AssertEqual(ParseEvent(is), "sport event ", "Parse event with leading spaces");
-    }
-
-    {
-        std::istringstream is("  first event  \n  second event");
-        std::vector<std::string> events;
-        events.push_back(ParseEvent(is));
-        events.push_back(ParseEvent(is));
-        AssertEqual(events, std::vector<std::string>{"first event  ", "second event"}, "Parse multiple events");
-    }
-}
-
-void TestAll() {
-    TestRunner tr;
-    tr.RunTest(TestParseEvent, "TestParseEvent");
-//    tr.RunTest(TestParseCondition, "TestParseCondition");
 }
