@@ -3,6 +3,8 @@
 #include "condition_parser.h"
 #include "test_runner.h"
 
+#include <fstream>
+
 std::string ParseEvent(std::istream &is) {
     while (is.peek() == ' ') {
         is.get();
@@ -14,6 +16,8 @@ std::string ParseEvent(std::istream &is) {
 
 void TestParseEvent();
 
+void GetFromFile(std::ifstream &input, Database &db);
+
 void TestAll();
 
 int main() {
@@ -21,6 +25,14 @@ int main() {
     TestAll();
 
     Database EventBase;
+
+    std::ifstream input("DataBase");
+
+    if (input.is_open()) {
+        GetFromFile(input, EventBase);
+    } else {
+        std::cout << "ERROR with open saved base!" << std::endl;
+    }
 
     for (std::string line; getline(std::cin, line);) {
         try {
@@ -60,6 +72,8 @@ int main() {
                 }
             } else if (command.empty()) {
                 continue;
+            } else if (command == "EXIT") {
+                break;
             } else {
                 throw std::logic_error("Unknown command: " + command);
             }
@@ -68,7 +82,31 @@ int main() {
         }
     }
 
+    std::ofstream output("DataBase");
+
+    if (output.is_open()) {
+        EventBase.Print(output);
+    } else {
+        std::cout << "ERROR with open file!" << std::endl;
+    }
+    output.close();
+
     return 0;
+}
+
+void GetFromFile(std::ifstream &input, Database &db) {
+    for (std::string OldEvent; getline(input, OldEvent);) {
+        if (OldEvent.empty()) {
+            std::cout << "No events." << std::endl;
+            break;
+        } else {
+            std::istringstream old(OldEvent);
+            const auto date = ParseDate(old);
+            const auto event = ParseEvent(old);
+            db.Add(date, event);
+        }
+    }
+    input.close();
 }
 
 void TestParseEvent() {
