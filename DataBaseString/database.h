@@ -10,15 +10,18 @@
 
 class Database {
 public:
+
+    Database(std::string Path);
+
     void Add(const std::string &date, const std::string &event);
 
     [[nodiscard]] std::string Last(const std::string &date) const;
 
     void Print(std::ostream &stream) const;
 
-    void GetFromFile(std::ifstream &input);
+    void GetFromFile();
 
-    void PutIntoFile(std::ofstream &output);
+    void PutIntoFile();
 
     template<class Func>
     int RemoveIf(Func func) {
@@ -57,6 +60,7 @@ public:
     }
 
 private:
+    const std::string PathName = "NewDataBase";
     std::map<std::string, std::vector<std::string>> EventBase;
     std::map<std::string, std::set<std::string>> EventBaseSet;
 };

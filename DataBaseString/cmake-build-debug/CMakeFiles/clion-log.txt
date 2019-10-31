@@ -1,4 +1,4 @@
-/snap/clion/88/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zygalo/C++/Coursera_git/DataBaseString
+/snap/clion/92/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/zygalo/C++/Coursera_git/DataBaseString
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug

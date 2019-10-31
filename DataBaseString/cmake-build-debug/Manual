@@ -1,0 +1,24 @@
+			Database Use Tutorial.
+	List of functions: 
+
+	0) If a file with the entered name existed then all data will be restored from the last session.
+
+	1) "Add" - function for adding differents events with their dates;
+Semantics : Add + date with format "year-month-day" + name of event.
+
+	2) Print - function for output on display all events in database;
+Semantics : "Print".
+
+	3) Del - function for deleting events by conditions (without conditions all events will deleted);
+Semantics : Del + conditions.
+EXAMPLE : Del date <= 2020-11-23 AND (event == "Holiday" OR event == "Meeting")
+
+	4) "Find" - function for searching events in database;
+Semantics : Find + conditions.
+EXAMPLE : Find date >= 2017-01-01 AND date < 2017-07-01 AND event == "sport event"
+
+	5) "Last" - function for searching last event before entered date;
+Semantics : Last + date with format "year-month-day".
+
+	6) "Exit" - function to shut down the database (all your changes will saved in file with entered name);
+Semantics : "Exit".

@@ -1,40 +1,30 @@
-#include <cstring>
 #include "database.h"
 #include "date.h"
 #include "condition_parser.h"
 #include "test_runner.h"
 #include "tests.h"
 
+#define PATH "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/Database/"
+
 int main() {
 
     TestAll();
-
-    Database EventBase;
 
     std::cout << "Database is activated" << std::endl
               << "Enter name of your database : ";
 
     std::string PathName = "DataBase";
     std::cin >> PathName;
-    PathName += ".txt";
+    PathName = PATH + PathName + ".txt";
 
     std::cout << "Wait a minute for loading old events..." << std::endl;
 
-    std::ifstream input;
-    input.open(PathName, std::ios::in);
+    Database EventBase(PathName);
 
-    if (!input) {
-        std::ofstream creation(PathName);
-        creation.close();
-    } else {
-        if (input.is_open()) {
-            EventBase.GetFromFile(input);
-        } else {
-            std::cerr << "ERROR: saved base was not opened" << std::endl;
-        }
-    }
+    EventBase.GetFromFile();
 
-    std::cout << "Loading is complete" << std::endl;
+    std::cout << "Loading is complete" << std::endl
+              << "Enter \"Man\" for user's manual" << std::endl;
 
     for (std::string line; getline(std::cin, line);) {
         try {
@@ -72,10 +62,20 @@ int main() {
                 } catch (std::invalid_argument &) {
                     std::cout << "No entries" << std::endl;
                 }
-            } else if (command.empty()) {
-                continue;
             } else if (command == "Exit") {
                 break;
+            } else if (command == "Man") {
+                std::ifstream man("Manual");
+                if (man.is_open()) {
+                    std::string cur;
+                    while (getline(man, cur)) {
+                        std::cout << cur << std::endl;
+                    }
+                } else {
+                    std::cerr << "ERROR: manual could not opened" << std::endl;
+                }
+            } else if (command.empty()) {
+                continue;
             } else {
                 throw std::logic_error("Unknown command: " + command);
             }
@@ -84,16 +84,7 @@ int main() {
         }
     }
 
-
-    std::ofstream output;
-    output.open(PathName, std::ios::out);
-
-    if (output.is_open()) {
-        EventBase.PutIntoFile(output);
-    } else {
-        std::cerr << "ERROR: database was not saved" << std::endl;
-    }
-    output.close();
+    EventBase.PutIntoFile();
 
     std::cout << "Seance is over" << std::endl;
 
