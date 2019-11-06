@@ -4,7 +4,7 @@
 #include "test_runner.h"
 #include "tests.h"
 
-#define PATH "/home/zygalo/C++/Coursera_git/DataBaseString/cmake-build-debug/Database/"
+#define PATH "Database/"
 
 int main() {
 

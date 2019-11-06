@@ -14,14 +14,6 @@ memory
 iostream
 -
 
-/home/zygalo/C++/Coursera_git/DataBaseString/database.cpp
-database.h
-/home/zygalo/C++/Coursera_git/DataBaseString/database.h
-iostream
--
-utility
--
-
 /home/zygalo/C++/Coursera_git/DataBaseString/database.h
 date.h
 /home/zygalo/C++/Coursera_git/DataBaseString/date.h
@@ -69,12 +61,6 @@ sstream
 -
 iostream
 -
-
-/home/zygalo/C++/Coursera_git/DataBaseString/tests.cpp
-tests.h
-/home/zygalo/C++/Coursera_git/DataBaseString/tests.h
-database.h
-/home/zygalo/C++/Coursera_git/DataBaseString/database.h
 
 /home/zygalo/C++/Coursera_git/DataBaseString/tests.h
 test_runner.h
